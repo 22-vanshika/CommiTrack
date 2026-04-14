@@ -1,0 +1,21 @@
+services:
+  # Backend API Service
+  - type: web
+    name: commission-api
+    runtime: python
+    region: oregon
+    plan: free
+    branch: main
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: FRONTEND_URL
+        sync: false
+    healthCheckPath: /api/dashboard/summary
+    disk:
+      name: commission-disk
+      mountPath: /opt/render/project/src/backend
+      sizeGB: 1

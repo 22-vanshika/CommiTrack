@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Brand Colors */
+    --color-primary: #3b82f6; /* Blue 500 - Main actions, active states */
+    --color-primaryHover: #2563eb; /* Blue 600 - Hover state */
+    --color-primaryLight: #60a5fa; /* Blue 400 - Light variant */
+    --color-primaryDark: #1d4ed8; /* Blue 700 - Dark variant */
+    --color-primaryBg: rgba(59, 130, 246, 0.2); /* Primary backgrounds */
+
+    /* Background Colors - Dark Theme */
+    --color-bgBase: #111111; /* Dark black - Main background */
+    --color-bgDark: #111111; /* Slate 800 - Elevated surfaces */
+    --color-bgCard: #1e1f24; /* Card backgrounds */
+    --color-bgCardHover: rgba(51, 65, 85, 0.6); /* Card hover state */
+    --color-bgSidebar: #1e1f24; /* Sidebar background */
+    --color-bgInput: rgba(51, 65, 85, 0.6); /* Input fields */
+
+    /* Border Colors */
+    --color-border: rgba(75, 85, 99, 0.3); /* Gray 600 with opacity */
+    --color-borderLight: rgba(75, 85, 99, 0.2); /* Lighter borders */
+    --color-borderHover: rgba(107, 114, 128, 0.5); /* Border on hover */
+
+    /* Text Colors */
+    --color-textPrimary: #ffffff; /* White - Main text */
+    --color-textSecondary: #e5e7eb; /* Gray 200 - Secondary text */
+    --color-textMuted: #9ca3af; /* Gray 400 - Muted text */
+    --color-textDim: #6b7280; /* Gray 500 - Dim text */
+    --color-textSubtle: #4b5563; /* Gray 600 - Subtle text */
+
+    /* Accent Colors - Success */
+    --color-success: #10b981; /* Green 500 */
+    --color-successHover: #059669; /* Green 600 */
+    --color-successLight: #34d399; /* Green 400 */
+    --color-successBg: rgba(16, 185, 129, 0.2); /* Success backgrounds */
+    --color-successBorder: rgba(16, 185, 129, 0.3); /* Success borders */
+
+    /* Accent Colors - Danger/Error */
+    --color-danger: #ef4444; /* Red 500 */
+    --color-dangerHover: #dc2626; /* Red 600 */
+    --color-dangerLight: #f87171; /* Red 400 */
+    --color-dangerBg: rgba(239, 68, 68, 0.2); /* Error backgrounds */
+    --color-dangerBorder: rgba(239, 68, 68, 0.3); /* Error borders */
+
+    /* Accent Colors - Warning */
+    --color-warning: #f59e0b; /* Amber 500 */
+    --color-warningHover: #d97706; /* Amber 600 */
+    --color-warningLight: #fbbf24; /* Amber 400 */
+    --color-warningBg: rgba(245, 158, 11, 0.2); /* Warning backgrounds */
+
+    /* Accent Colors - Info */
+    --color-info: #8b5cf6; /* Violet 500 */
+    --color-infoHover: #7c3aed; /* Violet 600 */
+    --color-infoLight: #a78bfa; /* Violet 400 */
+    --color-infoBg: rgba(139, 92, 246, 0.2); /* Info backgrounds */
+
+    /* Chart Colors */
+    --color-chartPrimary: rgba(59, 130, 246, 0.6); /* Blue for bars */
+    --color-chartPrimaryBorder: rgb(59, 130, 246); /* Blue border */
+    --color-chartGrid: rgba(75, 85, 99, 0.2); /* Grid lines */
+    --color-chartText: #9ca3af; /* Chart labels */
+    --color-chartTextDim: #6b7280; /* Chart title */
+
+    /* Shadow Colors */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    --shadow-primary: 0 10px 15px -3px rgba(59, 130, 246, 0.2);
+  }
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bgBase);
+  color: var(--color-textPrimary);
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
